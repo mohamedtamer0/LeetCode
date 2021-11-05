@@ -1,4 +1,4 @@
-package `704`.BinarySearch
+package `704BinarySearch`
 
 class Solution {
     fun search(nums: IntArray, target: Int): Int {

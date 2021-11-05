@@ -1,22 +1,20 @@
 package `704BinarySearch`
 
-class Solution {
+internal class Solution {
     fun search(nums: IntArray, target: Int): Int {
-        val index = -1
-        var begin = 0
-        var end = nums.size - 1
-        var middle = (end + begin) / 2
-        while (begin <= end) {
-            if (nums[middle] == target) return middle
-            if (nums[middle] > target) {
-                end = middle - 1
-                middle = (end + begin) / 2
+        var lo = 0
+        var hi = nums.size - 1
+        while (lo <= hi) {
+            val mid = lo + (hi - lo) / 2
+            if (nums[mid] == target) {
+                return mid
             }
-            if (nums[middle] < target) {
-                begin = middle + 1
-                middle = (end + begin) / 2
+            if (nums[mid] > target) {
+                hi = mid - 1
+            } else {
+                lo = mid + 1
             }
         }
-        return index
+        return -1
     }
 }

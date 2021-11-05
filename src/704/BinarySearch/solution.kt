@@ -1,3 +1,5 @@
+package `704`.BinarySearch
+
 class Solution {
     fun search(nums: IntArray, target: Int): Int {
         val index = -1

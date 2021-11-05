@@ -1,5 +1,4 @@
-/* The isBadVersion API is defined in the parent class VersionControl.
-      def isBadVersion(version: Int): Boolean = {} */
+package `278`.` First Bad Version`
 
 class Solution: VersionControl() {
     override fun firstBadVersion(n: Int) : Int {

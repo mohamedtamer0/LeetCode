@@ -1,4 +1,4 @@
-package `35`.` Search Insert Position`
+package `35`.`Search Insert Position`
 
 class Solution {
     fun searchInsert(nums: IntArray, target: Int): Int {
